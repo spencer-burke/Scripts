@@ -1,0 +1,5 @@
+run the wrapper script
+collected the ouput with a function and return it
+check the output
+if it is correct return the output and print it
+if it not correct run it again
