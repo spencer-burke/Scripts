@@ -1,0 +1,25 @@
+#------------------------------------
+#  Debugger Input Script
+#------------------------------------
+echo \n\n
+break last
+run
+set pagination off
+set logging file gdb_out.txt
+set logging overwrite
+set logging on
+echo ------------------------------------ \n
+echo display variables \n
+echo \n
+echo Variable bResult:\n
+x/db &bResult
+echo Variable wResult:\n
+x/dh &wResult
+echo Variable dResult:\n
+x/dw &dResult
+echo Variable qResult:\n
+x/dg &qResult
+echo \n 
+set logging off
+quit
+
