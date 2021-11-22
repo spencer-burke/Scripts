@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+import sys
+
+result = sys.argv[1]
+extend = int(sys.argv[2])
+
+if extend == 64:
+    extend = 16
+elif extend == 32:
+    extend = 8
+elif extend == 16:
+    extend = 4
+else:
+    extend = 2
+extend = extend-len(result)
+
+for x in range(0, extend):
+    result = "F" + result
+
+result = "0x" + result
+print(result)
